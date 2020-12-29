@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 //mongodb://localhost:27017/CrudDB
+//mongodb+srv://amarDB:Amardb@mydb-rabpp.mongodb.net/test?retryWrites=true&w=majority
 mongoose.connect('mongodb+srv://amarDB:Amardb@mydb-rabpp.mongodb.net/test?retryWrites=true&w=majority').then((res)=>{
     console.log('MongoDB connection succeeded.');
 }).catch((err)=>{
