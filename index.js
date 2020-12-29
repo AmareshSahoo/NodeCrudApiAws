@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 app.use(cors({ origin: "http://localhost:4200" }));
 
 
+app.use("/", (req, res) => { res.status(200).send("WELCOME TO AWS NODE API") });
+
 app.use("/employees", employeeController);
 
 app.use('/health', (req, res) => { res.send("Status: OK") })
