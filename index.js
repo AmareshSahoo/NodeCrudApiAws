@@ -15,7 +15,7 @@ app.use("/", (req, res) => { res.status(200).send("WELCOME TO AWS NODE API") });
 
 app.use("/employees", employeeController);
 
-app.use('/health', (req, res) => { res.send("Status: OK") })
+app.use('/health', (req, res) => { res.status(200).send("Status: OK") })
 
 app.listen(process.env.PORT || 5000, () =>
     console.log("Server started at port : 5000")
