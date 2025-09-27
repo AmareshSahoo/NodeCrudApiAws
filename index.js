@@ -19,4 +19,6 @@ app.get("/health", (req, res) => {
 
 app.use("/employees", employeeController);
 
-app.listen(3000, () => console.log("Server started at port : 5000"));
+app.listen(3000, () =>
+  console.log("Server started at port : 3000, Amaresh Sahoo")
+);
